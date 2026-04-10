@@ -1,11 +1,11 @@
 function changeColor(){
-    let colorFondo = document.getElementById("container")
+    let colorFondo = document.getElementById("background")
     colorFondo.style.backgroundColor= "darkblue"
 };
 
 function changeText(){
-    let textoColor = document.getElementById("color")
-    textoColor.textContent="darkblue"
+    let textoColor = document.getElementById("text")
+    textoColor.innerHTML="darkblue"
 };
 
 

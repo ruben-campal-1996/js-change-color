@@ -2,20 +2,19 @@
 
 function changeColor(){
     let colorcito = document.getElementById("background")
-    let colorActual = getComputedStyle(colorcito).backgroundColor
-    if (colorActual === "rgb(255, 0, 0)") {
-        colorcito.style.backgroundColor = "darkblue"
-    } else {
+    if (colorcito.style.backgroundColor === "darkblue") {
         colorcito.style.backgroundColor = "red"
+    } else {
+        colorcito.style.backgroundColor = "darkblue"
     }
 };
 
 function changeText(){
-    let texto = document.getElementById("color")
-    if (texto.textContent == "red") {
-        texto.textContent = "darkblue"
+    let texto = document.getElementById("text")
+    if (texto.innerHTML === "darkblue") {
+        texto.innerHTML = "red"
     } else {
-        texto.textContent = "red"
+        texto.innerHTML = "darkblue"
     }
 };
 
