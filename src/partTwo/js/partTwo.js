@@ -1,7 +1,7 @@
 //II parte, refactorizar para hacer toggle, nos basaremos en lo que hicimos en el archivo partOne.js
 
 function changeColor(){
-    let colorcito = document.getElementById("container")
+    let colorcito = document.getElementById("background")
     let colorActual = getComputedStyle(colorcito).backgroundColor
     if (colorActual === "rgb(255, 0, 0)") {
         colorcito.style.backgroundColor = "darkblue"
